@@ -7,15 +7,11 @@ for (var i = 0; i < image.length; i++) {
     image[i].addEventListener("click", function () {
         var src = this.getAttribute("title");
         bigImage.src = src;
-        // all.style.display = "block";
-        all.classList.add("show");
-        all.classList.remove("hide");
+        all.style.display = "block";
     })
 
 }
 
 close.addEventListener("click", function () {
-    // all.style.display = "none";
-    all.classList.add("hide");
-    all.classList.remove("show");
+    all.style.display = "none";
 });
