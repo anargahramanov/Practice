@@ -1,0 +1,34 @@
+.main{
+    width: 400px;
+    margin: 200px 200px;
+}
+
+.main .inputs{
+    display: flex;
+    justify-content: space-between;
+}
+
+.col, .raw{
+    width: 30%;
+}
+
+.button{
+    width: 20%;
+}
+
+#table{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+#table tr{
+    height: 30px;
+    width: 100%;
+    border:1px solid red;
+    margin-top: 1px;
+}
+
+/* #table td{
+    height: 100%;
+} */
