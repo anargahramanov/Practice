@@ -39,3 +39,28 @@
     text-align: center;
     line-height: 25px;
 }
+
+.all .bigImage .next, 
+.all .bigImage .prev{
+    position: absolute;
+    top: 40%;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    color: white;
+    font-size: 30px;
+    line-height: 35px;
+    background: rgba(230, 118, 118, 0.8);
+    text-align: center;
+}
+
+.all .bigImage .next{
+    right: 0;
+    margin-right: 10px;
+}
+
+.all .bigImage .prev{
+    left: 0;
+    justify-content: flex-end;
+    margin-left: 10px;
+}
