@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .main{
     width: 400px;
     margin: 200px 200px;
@@ -8,11 +12,12 @@
     justify-content: space-between;
 }
 
-.col, .raw{
+#col, #raw{
     width: 30%;
 }
 
-.button{
+#button,
+#setColor{
     width: 20%;
 }
 
@@ -25,10 +30,17 @@
 #table tr{
     height: 30px;
     width: 100%;
-    border:1px solid red;
+    border:1px solid black;
     margin-top: 1px;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
-/* #table td{
+#table td{
     height: 100%;
-} */
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    line-height: 30px;
+    color:black;
+}
