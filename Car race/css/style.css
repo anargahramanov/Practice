@@ -1,0 +1,82 @@
+#upSide{
+    margin-top: 200px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+#upSide h4{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#upSide button{
+    margin: 15px 0;
+}
+
+#buttons{
+    width: 300px;
+}
+
+#blueBtn,
+#redBtn,
+#startBtn{
+    padding: 5px 10px;
+    width: 80px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#blueBtn{
+    background: blue;
+}
+
+#redBtn{
+    background: red;
+}
+
+#startBtn{
+    background: green;
+}
+
+#roadDiv{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+#road{
+    width: 100%;
+    height: 100%;
+}
+
+#carBlue,
+#carRed{
+    position: absolute;
+    top: 35px;
+}
+
+#carRed{
+    top: 230px;
+}
+
+.leftZero{
+    left: 0;
+}
+
+.rightZero{
+    right: 0;
+}
+
+.amination{
+    animation-name: carMove;
+    animation-timing-function: linear;
+}
+
+@keyframes carMove {
+    0% {left:0%;}
+    100% {left:calc(100% - 248px);}
+}
