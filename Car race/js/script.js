@@ -62,11 +62,13 @@ redBtn.addEventListener("click", function () {
         setTimeout(function () {
             alert("You Win " + betAmount + " $");
             money = money + betAmount;
+            var moneySpan = document.getElementById("moneySpan").innerHTML = money;
         }, timeRed * 1000);
     } else {
         setTimeout(function () {
             alert("You Lose " + betAmount + " $");
             money = money - betAmount;
+            var moneySpan = document.getElementById("moneySpan").innerHTML = money;
         }, timeBlue * 1000);
     }
 
