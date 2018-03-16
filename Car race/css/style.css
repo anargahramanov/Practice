@@ -1,5 +1,5 @@
 #upSide{
-    margin-top: 200px;
+    margin-top: 20px;
     margin-left: 40px;
     display: flex;
     flex-direction: column;
@@ -9,6 +9,7 @@
     font-size: 20px;
     font-weight: bold;
     margin-top: 15px;
+    width: 300px;
 }
 
 #upSide button{
@@ -21,7 +22,8 @@
 
 #blueBtn,
 #redBtn,
-#startBtn{
+#startBtn,
+#betBtn{
     padding: 5px 10px;
     width: 80px;
     color: white;
@@ -31,7 +33,7 @@
 }
 
 #blueBtn{
-    background: blue;
+    background: #5280d4;
 }
 
 #redBtn{
@@ -40,6 +42,26 @@
 
 #startBtn{
     background: green;
+}
+
+#betBtn{
+    background: #8a6a1b;
+}
+
+#betting{
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+
+#buttons input{
+    height: 29px;
+    width: 40%;
+    margin: 20px 0px;
+    border: 1px solid black;
+    margin-right: 1px;
+    font-size: 15px;
+    padding: 0px 2px;
 }
 
 #roadDiv{
