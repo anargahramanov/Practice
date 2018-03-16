@@ -1,4 +1,5 @@
-var money = document.getElementById("money");
+var money = 1000;
+var moneySpan = document.getElementById("moneySpan").innerHTML = money;
 var blueBtn = document.getElementById("blueBtn");
 var redBtn = document.getElementById("redBtn");
 var carBlue = document.getElementById("carBlue");
@@ -33,19 +34,26 @@ function racing (){
 
 
 blueBtn.addEventListener("click", function () {
-    var betAmount = amount.value;
+    var betAmount = new Number (amount.value);
     if (timeBlue < timeRed) {
         setTimeout(function () {
             alert("You Win " + betAmount + " $");
+            money = money + betAmount;
+            var moneySpan = document.getElementById("moneySpan").innerHTML = money;
         }, timeBlue * 1000);
+
     } else {
         setTimeout(function () {
             alert("You Lose " + betAmount + " $");
+            money = money - betAmount;   
+            var moneySpan = document.getElementById("moneySpan").innerHTML = money;
         }, timeRed * 1000);
+
     }
 
     racing ();
 
+    console.log(typeof betAmount);
 });
 
 redBtn.addEventListener("click", function () {
@@ -53,16 +61,17 @@ redBtn.addEventListener("click", function () {
     if (timeBlue > timeRed) {
         setTimeout(function () {
             alert("You Win " + betAmount + " $");
+            money = money + betAmount;
         }, timeRed * 1000);
     } else {
         setTimeout(function () {
             alert("You Lose " + betAmount + " $");
+            money = money - betAmount;
         }, timeBlue * 1000);
     }
 
     racing ();
 
 });
-
 
 
