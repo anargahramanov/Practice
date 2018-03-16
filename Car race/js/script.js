@@ -37,16 +37,16 @@ blueBtn.addEventListener("click", function () {
     var betAmount = new Number (amount.value);
     if (timeBlue < timeRed) {
         setTimeout(function () {
-            alert("You Win " + betAmount + " $");
             money = money + betAmount;
             var moneySpan = document.getElementById("moneySpan").innerHTML = money;
+            alert("You Win " + betAmount + " $");
         }, timeBlue * 1000);
 
     } else {
         setTimeout(function () {
-            alert("You Lose " + betAmount + " $");
             money = money - betAmount;   
             var moneySpan = document.getElementById("moneySpan").innerHTML = money;
+            alert("You Lose " + betAmount + " $");
         }, timeRed * 1000);
 
     }
