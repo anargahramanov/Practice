@@ -1,0 +1,18 @@
+#road{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#map{
+    width: 100%;
+    height: 100%;
+}
+
+#moto{
+    position: absolute;
+    top: 45px;
+    left: 150px;
+    width: 24px;
+    transform: rotate(88deg);
+}
