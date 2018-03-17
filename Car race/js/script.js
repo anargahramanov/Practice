@@ -9,6 +9,9 @@ var timeRed = Math.round((Math.random() * 5) + 4);
 var timeBlue1 = timeBlue + "s";
 var timeRed1 = timeRed + "s";
 var amount = document.getElementById("amount");
+var resultRace = document.querySelector("#result h1");
+
+console.log(resultRace);
 
 function racing (){
     if (timeBlue = timeRed) {
@@ -34,19 +37,19 @@ function racing (){
 
 
 blueBtn.addEventListener("click", function () {
-    var betAmount = new Number (amount.value);
+    
     if (timeBlue < timeRed) {
         setTimeout(function () {
             money = money + betAmount;
             var moneySpan = document.getElementById("moneySpan").innerHTML = money;
-            alert("You Win " + betAmount + " $");
+            resultRace.innerText = "Siz "+ betAmount +" $ uddunuz";
         }, timeBlue * 1000);
 
     } else {
         setTimeout(function () {
             money = money - betAmount;   
             var moneySpan = document.getElementById("moneySpan").innerHTML = money;
-            alert("You Lose " + betAmount + " $");
+            resultRace.innerText = "Siz "+ betAmount +" $ uduzdunuz";
         }, timeRed * 1000);
 
     }
@@ -57,16 +60,16 @@ blueBtn.addEventListener("click", function () {
 });
 
 redBtn.addEventListener("click", function () {
-    var betAmount = amount.value;
+    var betAmount = new Number (amount.value);
     if (timeBlue > timeRed) {
         setTimeout(function () {
-            alert("You Win " + betAmount + " $");
+            resultRace.innerText = "Siz "+ betAmount +" $ uddunuz";
             money = money + betAmount;
             var moneySpan = document.getElementById("moneySpan").innerHTML = money;
         }, timeRed * 1000);
     } else {
         setTimeout(function () {
-            alert("You Lose " + betAmount + " $");
+            resultRace.innerText = "Siz "+ betAmount +" $ uduzdunuz";
             money = money - betAmount;
             var moneySpan = document.getElementById("moneySpan").innerHTML = money;
         }, timeBlue * 1000);

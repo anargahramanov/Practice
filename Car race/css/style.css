@@ -98,6 +98,14 @@
     animation-timing-function: linear;
 }
 
+#result h1{
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}
+
 @keyframes carMove {
     0% {left:0%;}
     100% {left:calc(100% - 248px);}

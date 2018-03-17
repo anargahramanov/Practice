@@ -1,0 +1,33 @@
+.slide{
+    position: relative;
+    margin: 50px 34%;
+}
+
+.images{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.images img {
+    width: 400px;
+    height: 229px;
+}
+
+.slide .prev, .slide .next{
+    position: absolute;
+    color: white;
+    top: 40%;
+    font-size: 50px;
+}
+
+.slide .next{
+    right: 10px;
+}
+
+.active {
+    opacity: 1;
+    transition: 0.5s;
+}
