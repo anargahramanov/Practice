@@ -37,17 +37,19 @@ function racing (){
 
 
 blueBtn.addEventListener("click", function () {
-    
+       
+    var betAmount = new Number (amount.value);
+    resultRace.innerText =  "Siz " + betAmount + " Mərc etdiniz";
     if (timeBlue < timeRed) {
         setTimeout(function () {
-            money = money + betAmount;
+            money += betAmount;
             var moneySpan = document.getElementById("moneySpan").innerHTML = money;
             resultRace.innerText = "Siz "+ betAmount +" $ uddunuz";
         }, timeBlue * 1000);
 
     } else {
         setTimeout(function () {
-            money = money - betAmount;   
+            money -= betAmount; 
             var moneySpan = document.getElementById("moneySpan").innerHTML = money;
             resultRace.innerText = "Siz "+ betAmount +" $ uduzdunuz";
         }, timeRed * 1000);
@@ -56,21 +58,22 @@ blueBtn.addEventListener("click", function () {
 
     racing ();
 
-    console.log(typeof betAmount);
 });
 
 redBtn.addEventListener("click", function () {
+
     var betAmount = new Number (amount.value);
+    resultRace.innerText =  "Siz " + betAmount + " Mərc etdiniz";
     if (timeBlue > timeRed) {
         setTimeout(function () {
             resultRace.innerText = "Siz "+ betAmount +" $ uddunuz";
-            money = money + betAmount;
+            money += betAmount;
             var moneySpan = document.getElementById("moneySpan").innerHTML = money;
         }, timeRed * 1000);
     } else {
         setTimeout(function () {
             resultRace.innerText = "Siz "+ betAmount +" $ uduzdunuz";
-            money = money - betAmount;
+            money -= betAmount; 
             var moneySpan = document.getElementById("moneySpan").innerHTML = money;
         }, timeBlue * 1000);
     }
@@ -80,3 +83,4 @@ redBtn.addEventListener("click", function () {
 });
 
 
+console.log(typeof betAmount);
