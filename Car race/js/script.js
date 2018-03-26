@@ -39,7 +39,7 @@ function racing (){
 blueBtn.addEventListener("click", function () {
        
     var betAmount = new Number (amount.value);
-    resultRace.innerText =  "Siz " + betAmount + " Mərc etdiniz";
+    resultRace.innerText =  "Siz " + betAmount + " $ Mərc etdiniz";
     if (timeBlue < timeRed) {
         setTimeout(function () {
             money += betAmount;
@@ -63,7 +63,7 @@ blueBtn.addEventListener("click", function () {
 redBtn.addEventListener("click", function () {
 
     var betAmount = new Number (amount.value);
-    resultRace.innerText =  "Siz " + betAmount + " Mərc etdiniz";
+    resultRace.innerText =  "Siz " + betAmount + " $ Mərc etdiniz";
     if (timeBlue > timeRed) {
         setTimeout(function () {
             resultRace.innerText = "Siz "+ betAmount +" $ uddunuz";

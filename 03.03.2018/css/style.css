@@ -1,0 +1,237 @@
+
+*{
+    box-sizing: border-box;
+}
+
+#navbar{
+    height: 100px;
+    width: 100%;
+    background: #a22121;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#navbar .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar #logo{
+}
+
+#navbar #logo img{
+    width: 100px;
+    cursor: pointer;
+    transform: scale(1.5,1.5);
+    margin-top: 23px;
+    margin-left: 20px;
+}
+
+#navbar #navMenu ul {
+    margin-right: 300px;
+}
+
+#navbar #navMenu ul li{
+    display: inline-block;
+    padding: 0 15px;
+    line-height: 46px;
+    box-sizing: border-box;
+    padding-top: 50px;
+    border-bottom: 2px solid transparent;
+    font-family: 'Indie Flower', cursive;
+}
+
+#navbar #navMenu ul li:hover{
+    border-bottom: 2px solid white;
+    background: #960a0a;
+}
+
+#navbar #navMenu ul li a{
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    letter-spacing: 4.5px;
+}
+
+#body #bodyHeadPhoto{
+    width: 100%;
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+}
+
+#body #bodyHeadPhoto img{
+    bottom: -120px;
+    width: 100%;
+    position: absolute;
+}
+
+#body .headers h1{
+    text-align: center;
+    font-size: 65px;
+    margin-top: 30px;
+    font-family: 'Indie Flower', cursive;
+}
+
+#body .rows{
+    display: flex;
+    justify-content: space-between;
+}
+
+#body .rows .foodBox{
+    height: 300px;
+    width: 23%;
+    margin:30px 0;
+    border: 1px solid lightgray;
+}
+
+#body .foodBox .foodBoxImg{
+    width:100%;
+    height: 75%;
+}
+
+#body .foodBox .foodBoxImg img{
+    width:100%;
+    height: 100%;
+    padding: 2px;
+}
+
+#body .foodBox .foodBoxContent{
+    width: 100%;
+    height: 25%;
+}
+
+#body .foodBox .foodBoxContent h3{
+    padding: 30px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Indie Flower', cursive;
+}
+
+#body .foodBox .foodBoxContent h3 a{
+    text-decoration: none;
+    color: black;
+}
+
+#body .foodBox .foodBoxContent h3 a:hover{
+    text-decoration: underline;
+}
+
+#footer{
+    width: 100%;
+    height: 100px;
+    background: #960a0a;
+    font-family: 'Indie Flower', cursive;
+    color: white;
+    line-height: 100px;
+    text-align: center;
+    font-size: 50px;
+
+}
+
+
+
+/* Food Pages */
+
+#sectionUp, #sectionDown{
+    width: 1000px;
+}
+
+#sectionUp{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid lightgray;
+    margin-top: 30px;
+}
+
+#body #cookPhotos{
+    display: flex;
+    width: 50%;
+    height: 350px;
+    flex-direction: column;
+}
+
+#body #cookPhotos .cookMainPhoto{
+    width: 100%;
+    height: 270px;
+}
+
+#body #cookPhotos .cookMainPhoto img{
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+}
+
+#body #cookPhotos .cookSmallPhotos{
+    height: 80px;
+    display: flex;
+}   
+
+#body #cookPhotos .cookSmallPhoto{
+    width: 25%;
+    height: 100%;
+    padding: 2px;
+    cursor: pointer;
+}
+
+#body #cookPhotos .cookSmallPhoto img{
+    width: 100%;
+    height: 100%;
+}
+
+#ingridients{
+    width: 50%;
+    padding: 30px 50px;
+}
+
+#ingridients h1{
+    font-size: 40px;
+    font-family: 'Indie Flower', cursive;
+}
+
+#ingridients ul{
+    padding: 16px 0;
+}
+
+#sectionDown #directions ul i{
+    font-size: 35px;
+    color: gray;
+}
+
+#ingridients ul li{
+    padding: 6px 0;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+#sectionDown #directions ul:nth-child(1) li{
+    display: inline-block;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+#sectionDown #directions ul:nth-child(1) li:nth-child(3){
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+
+}
+
+#sectionDown #directions ol li{
+    margin: 15px 0;
+    font-weight: bold;
+    line-height: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+#sectionDown #directions ul li h4{
+    margin-bottom: 5px;
+    color: gray;
+    font-weight: bold;
+}
+
+#sectionDown #directions ol{
+    list-style: decimal;
+}
