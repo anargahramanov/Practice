@@ -34,6 +34,7 @@ body{
     background: green;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 #videoPageUp{
@@ -65,14 +66,14 @@ body{
     background: purple;
 }
 
-#mainVideoPage i{
+#mainVideoPage #videoPage i{
     color: rgb(255, 254, 254);
     background: #08080896;
     border-radius: 50%;
     font-size: 40px;
     position: absolute;
-    top: 31px;
-    right: 210px;
+    top: -20px;
+    right: -20px;
     cursor: pointer;
 }
 
@@ -111,7 +112,37 @@ section{
     position: relative;
 }
 
+#slideSec #slider .next,
+#slideSec #slider .prev{
+    position: absolute;
+    top: 45%;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    transition: 1s;
+}
+
+#slideSec #slider .next:hover,
+#slideSec #slider .prev:hover{
+    background: #0808082e;
+    transition: 1s;
+}
+
+#slideSec #slider .next{
+right: 10px;
+}
+
+#slideSec #slider .prev{
+    left: 10px;
+}
+
 #slideSec #slider img{
+    width: 100%;
     display: none;
 }
 

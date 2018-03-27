@@ -6,7 +6,8 @@ var slideImgs = document.querySelectorAll("#slider #sliderImgs img");
 var activeSlideImg = document.querySelector(".active");
 var circle = document.querySelectorAll("#circles .circle");
 var whiteCircle = document.querySelector("#circles .whiteCircle");
-
+var next = document.querySelector("#slider .next");
+var prev = document.querySelector("#slider .prev");
 
 mainVideoPage.style.height = body.scrollHeight + "px";
 
@@ -42,11 +43,5 @@ setInterval(function () {
 
 }, 4000);
 
-for (var i = 0; i < circle.length; i++) {
 
-    circle[i].addEventListener("click", function () {
-        console.log(circle.indexOf(i));
-
-    });
-}
 
