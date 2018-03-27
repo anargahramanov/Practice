@@ -12,72 +12,76 @@
     <title>Lest's Cook It</title>
 </head>
 
-<body>
-
+<body id="body">
+    <button id="button">Button</button>
+    <div id="mainVideoPage">
+        <div id="videoPage">
+            <div id="videoPageUp">
+                <div id="videoSide"></div>
+                <div id="ingridients"></div>
+            </div>
+            <div id="videoPageDown">
+                <div id="directions"></div>
+            </div>
+        </div>
+        <i id="closeBtn" class="far fa-times-circle"></i>
+    </div>
     <div id="main">
         <div id="navbar">
-            <div class="container">
-                <div id="logo">
-                    <a href="index.html">
-                        <img src="img/logo.png" alt="cook_logo">
-                    </a>
-                </div>
+            <div id="container">
+                <div id="navlogo"></div>
                 <div id="navMenu">
                     <ul>
                         <li>
-                            <a href="">Meals</a>
+                            <a href="">Breakfast</a>
                         </li>
                         <li>
-                            <a href="">Fitness Meals</a>
+                            <a href="">Dinner</a>
                         </li>
                         <li>
-                            <a href="">Vegeterian</a>
+                            <a href="">Desert</a>
                         </li>
                         <li>
-                            <a href="">Coctails</a>
+                            <a href="">Healthy</a>
                         </li>
                         <li>
-                            <a href="">Pastas</a>
-                        </li>
-                        <li>
-                            <a href="">Cakes</a>
+                            <a href="">Drinks</a>
                         </li>
                     </ul>
                 </div>
+                <div id="navContact"></div>
             </div>
-
         </div>
-        <div id="body">
-            <div class="container">
-                <div id="bodyHeadPhoto">
-                    <img src="img/body_head_photo.jpg" alt="cook_photo">
-                </div>
-                <div class="headers">
-                    <h1>Foods</h1>
-                </div>
-                <div class="rows">
-                    <div class="foodBox">
-                        <div class="foodBoxImg">
-                            <img src="img/5.jpg" alt="">
+        <div id="mainBody">
+            <section id="slideSec">
+                <div id="container">
+                    <div id="slider">
+                        <div id="sliderImgs">
+                            <img src="img/slides/slide1.jpg" class="active">
+                            <img src="img/slides/slide2.jpg">
+                            <img src="img/slides/slide3.jpg">
+                            <img src="img/slides/slide4.jpg">
+                            <img src="img/slides/slide5.jpg">
                         </div>
-                        <div class="foodBoxContent">
-                            <h3>
-                                <a href="birdscup.html">Bird's Nest Breakfast Cups</a>
-                            </h3>
-
+                        <div id="circles">
+                            <div class="circle whiteCircle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
                         </div>
                     </div>
-                    <div class="foodBox"></div>
-                    <div class="foodBox"></div>
-                    <div class="foodBox"></div>
                 </div>
-            </div>
-        </div>
-        <div id="footer">
-            <div class="container">Have a Nice Meal :))</div>
+            </section>
+            <section id="BreakfastSec"></section>
+            <section id="DinnerSec"></section>
+            <section id="DesertSec"></section>
+            <section id="HealthySec"></section>
+            <section id="DrinksSec"></section>
         </div>
     </div>
 
+    </div>
 
     <script src="js/script.js"></script>
 </body>

@@ -1,266 +1,141 @@
-/* *p{
-    font-family: 'Playfair Display', serif;
-} */
-
-*{
-    box-sizing: border-box;
-}
-
-#navbar{
-    height: 100px;
-    width: 100%;
-    background: #a22121;
-}
-
-.container{
-    width: 1200px;
-    margin: 0 auto;
-}
-
-#navbar .container{
-    display: flex;
-    justify-content: space-between;
-}
-
-#navbar #logo{
-}
-
-#navbar #logo img{
-    width: 100px;
-    cursor: pointer;
-    transform: scale(1.5,1.5);
-    margin-top: 23px;
-    margin-left: 20px;
-}
-
-#navbar #navMenu ul {
-    margin-right: 100px;
-}
-
-#navbar #navMenu ul li{
-    display: inline-block;
-    padding: 0 15px;
-    line-height: 47px;
-    box-sizing: border-box;
-    padding-top: 50px;
-    border-bottom: 2px solid transparent;
-    font-family: 'Indie Flower', cursive;
-}
-
-#navbar #navMenu ul li:hover{
-    border-bottom: 2px solid white;
-    background: #960a0a;
-}
-
-#navbar #navMenu ul li a{
-    color: white;
-    font-size: 22px;
-    text-decoration: none;
-    letter-spacing: 4.5px;
-}
-
-#body #bodyHeadPhoto{
-    width: 100%;
+body{
     position: relative;
-    height: 400px;
-    overflow: hidden;
-    margin-top: 2px;
 }
 
-#body #bodyHeadPhoto img{
-    bottom: -146px;
+#main{
     width: 100%;
-    position: absolute;
 }
 
-#body .headers h1{
-    text-align: center;
-    font-size: 65px;
-    margin-top: 30px;
-    font-family: 'Indie Flower', cursive;
-}
-
-#body .rows{
-    display: flex;
-    justify-content: space-between;
-}
-
-#body .rows .foodBox{
-    height: 300px;
-    width: 23%;
-    margin:30px 0;
-    border: 1px solid lightgray;
-}
-
-#body .foodBox .foodBoxImg{
-    width:100%;
-    height: 75%;
-}
-
-#body .foodBox .foodBoxImg img{
-    width:100%;
-    height: 100%;
-    padding: 2px;
-}
-
-#body .foodBox .foodBoxContent{
-    width: 100%;
-    height: 25%;
-}
-
-#body .foodBox .foodBoxContent h3{
-    padding: 30px 15px;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: 'Indie Flower', cursive;
-}
-
-#body .foodBox .foodBoxContent h3 a{
-    text-decoration: none;
-    color: black;
-}
-
-#body .foodBox .foodBoxContent h3 a:hover{
-    text-decoration: underline;
-}
-
-#footer{
-    width: 100%;
-    height: 100px;
-    background: #960a0a;
-    font-family: 'Indie Flower', cursive;
-    color: white;
-    line-height: 100px;
-    text-align: center;
-    font-size: 50px;
-
-}
-
-
-
-/* Food Pages */
-
-#sectionUp, #sectionDown{
+#container{
     width: 1000px;
+    margin: 0 auto;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
 }
 
-#sectionUp{
-    display: flex;
-    flex-wrap: wrap;
-    border-bottom: 1px solid lightgray;
-    margin-top: 30px;
+/* Video Watch Page */
+
+#mainVideoPage{
+    width: 100%;
+    display: none;
+    box-sizing: border-box;
+    padding: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.20);
+    z-index: 1;
 }
 
-#body #cookPhotos{
+#videoPage{
+    width: 80%;
+    height: 800px;
+    margin: 0 auto;
+    background: green;
     display: flex;
-    width: 50%;
-    height: 350px;
     flex-direction: column;
 }
 
-#body #cookPhotos .cookMainPhoto{
+#videoPageUp{
     width: 100%;
-    height: 270px;
-}
-
-#body #cookPhotos .cookMainPhoto img{
-    width: 100%;
-    height: 100%;
-    padding: 2px;
-}
-
-#body #cookPhotos .cookSmallPhotos{
-    height: 80px;
+    height: 60%;
     display: flex;
-}   
-
-#body #cookPhotos .cookSmallPhoto{
-    width: 25%;
-    height: 100%;
-    padding: 2px;
-    cursor: pointer;
 }
 
-#body #cookPhotos .cookSmallPhoto img{
-    width: 100%;
+#videoSide{
+    width: 50%;
     height: 100%;
+    background: yellow;
+}
+
+#videoPageDown{
+    width: 100%;
+    height: 40%;
 }
 
 #ingridients{
     width: 50%;
-    padding: 30px 50px;
+    height: 100%;
+    background: lightblue;
 }
 
-#ingridients h1{
+#directions{
+    width: 100%;
+    height: 100%;
+    background: purple;
+}
+
+#mainVideoPage i{
+    color: rgb(255, 254, 254);
+    background: #08080896;
+    border-radius: 50%;
     font-size: 40px;
-    font-family: 'Indie Flower', cursive;
+    position: absolute;
+    top: 31px;
+    right: 210px;
+    cursor: pointer;
 }
 
-#ingridients ul{
-    padding: 16px 0;
+/* Navbar  */
+
+#navbar{
+    width: 100%;
+    height: 80px;
+    background: #443f3f;
 }
 
-#sectionDown #directions ul i{
-    font-size: 35px;
-    color: gray;
-}
-
-#ingridients ul li{
-    padding: 6px 0;
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
-}
-
-#sectionDown #directions ul:nth-child(1) li{
+#navbar #navMenu ul li{
     display: inline-block;
-    margin: 10px 0;
-    padding: 0 10px;
+    line-height: 80px;
+    padding: 0px 15px;
+    letter-spacing: 0.5px;
 }
 
-#sectionDown #directions ul:nth-child(1) li:nth-child(3){
-    border-right: 1px solid gray;
-    border-left: 1px solid gray;
-
+#navbar #navMenu ul li a{
+    text-decoration: none;
+    color: white;
 }
 
-#sectionDown #directions ol li{
-    margin: 15px 0;
-    font-weight: bold;
-    line-height: 20px;
-    font-family: 'Playfair Display', serif;
+/* mainBody */
+
+section{
+    width: 100%;
+    height: 400px;
+    background: blue;
+    margin: 1px 0;
 }
 
-#sectionDown #directions ul li h4{
-    margin-bottom: 5px;
-    color: gray;
-    font-weight: bold;
+#slideSec #slider{
+    height: 400px;
+    overflow: hidden;
+    position: relative;
 }
 
-#sectionDown #directions ol{
-    list-style: decimal;
-    border-bottom: 1px solid lightgray;
+#slideSec #slider img{
+    display: none;
 }
 
-#footNotes, #facts{
-    padding: 30px 0;
-    border-bottom: 1px solid lightgray;
+#slideSec #slider .active{
+    display: block;
 }
 
-#footNotes h3, #footNotes h4, #facts h3{
-    margin-bottom: 20px;
+#slideSec #slider #circles{
+    position: absolute;
+    bottom: 5px;
+    left: 45%;
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
 }
 
-#footNotes h3, #facts h3{
-    font-size: 25px;
-    font-weight: bold;
-    font-family: 'Indie Flower', cursive;
+#slideSec #slider #circles .circle{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border:1px solid white;
+    cursor: pointer;
 }
 
-#footNotes h4{
-    font-style: italic;
-}
-
-#footNotes p, #facts p{
-    margin-bottom: 20px;
-    font-size: 16px;
+#slideSec #slider #circles .whiteCircle{
+    background: white;
 }
