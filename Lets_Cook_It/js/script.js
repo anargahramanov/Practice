@@ -117,12 +117,14 @@ cols.forEach(function (col) {
 
 closeBtn.addEventListener("click", function () {
     mainVideoPage.style.display = null;
+    iframe.src = null;
 });
 
 window.onkeyup = function (keyClose) {
     if (mainVideoPage.style.display == "block") {
         if (keyClose.which == 27) {
             mainVideoPage.style.display = null;
+            iframe.src = null;
         };
     };
 };
@@ -131,6 +133,7 @@ window.onclick = function (clickClose) {
     if (clickClose.target.classList.contains("mainVideoPage") &&
         mainVideoPage.style.display == "block") {
         mainVideoPage.style.display = null;
+        iframe.src = null;
     };
 };
 
