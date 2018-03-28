@@ -1,11 +1,14 @@
-var mainVideoPage = document.getElementById("mainVideoPage");
-var button = document.getElementById("button");
-var closeBtn = document.getElementById("closeBtn")
 var body = document.getElementById("body");
+var mainVideoPage = document.getElementById("mainVideoPage");
+var closeBtn = document.getElementById("closeBtn")
+var button = document.getElementById("button");
+
+var slider = document.querySelector("#slider");
 var slideImgs = document.querySelectorAll("#slider #sliderImgs img");
-var activeSlideImg = document.querySelector(".active");
+// var activeSlideImg = document.querySelector(".active");
 var circle = document.querySelectorAll("#circles .circle");
 var whiteCircle = document.querySelector("#circles .whiteCircle");
+var arrows = document.querySelectorAll("#slider .arrows");
 var next = document.querySelector("#slider .next");
 var prev = document.querySelector("#slider .prev");
 
@@ -43,5 +46,42 @@ setInterval(function () {
 
 }, 4000);
 
+slider.onmouseover = function () {
+    arrows.forEach(function (a) {
+        a.style.opacity = "1";
+        a.style.transition = "1.5s";
+    });
 
+};
 
+slider.onmouseleave = function () {
+    arrows.forEach(function (a) {
+        a.style.opacity = "0";
+        a.style.transition = "1.5s";
+    });
+
+};
+
+next.addEventListener("click", function () {
+    var activeSlideImg = document.querySelector(".active");
+    if (activeSlideImg.nextElementSibling != null) {
+        activeSlideImg.classList.remove("active");
+        activeSlideImg.nextElementSibling.classList.add("active");
+    } else {
+        activeSlideImg.classList.remove("active");
+        slideImgs[0].classList.add("active");
+    }
+
+});
+
+prev.addEventListener("click", function () {
+    var activeSlideImg = document.querySelector(".active");
+    if (activeSlideImg.previousElementSibling != null) {
+        activeSlideImg.classList.remove("active");
+        activeSlideImg.previousElementSibling.classList.add("active");
+    } else {
+        activeSlideImg.classList.remove("active");
+        slideImgs[slideImgs.length - 1].classList.add("active");
+    }
+
+});
