@@ -92,15 +92,19 @@ prev.addEventListener("click", function () {
 
 });
 
-cols.forEach(function(col){
-    col.onmouseover = function(){
+cols.forEach(function (col) {
+    col.onclick = function () {
+        mainVideoPage.style.display = "block";
+    };
+    col.onmouseover = function () {
         col.style.transform = "scale(1.05)";
         col.style.boxShadow = "#a4a4a480 5px 10px 5px";
     };
+
 });
 
-cols.forEach(function(col){
-    col.onmouseleave = function(){
+cols.forEach(function (col) {
+    col.onmouseleave = function () {
         col.style.transform = null;
         col.style.boxShadow = null;
     };
