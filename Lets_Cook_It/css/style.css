@@ -128,6 +128,7 @@ section .rows .cols{
     width: 23%;
     border: 1px solid lightgray;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 section .rows .colsPhoto{

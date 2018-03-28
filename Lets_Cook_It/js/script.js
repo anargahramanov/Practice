@@ -95,7 +95,6 @@ prev.addEventListener("click", function () {
 cols.forEach(function(col){
     col.onmouseover = function(){
         col.style.transform = "scale(1.05)";
-        col.style.transition = "0.5s";
         col.style.boxShadow = "#a4a4a480 5px 10px 5px";
     };
 });
@@ -103,7 +102,6 @@ cols.forEach(function(col){
 cols.forEach(function(col){
     col.onmouseleave = function(){
         col.style.transform = null;
-        col.style.transition = null;
         col.style.boxShadow = null;
     };
 });
