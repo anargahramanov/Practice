@@ -1,16 +1,22 @@
 var body = document.getElementById("body");
+
+// VideoPage JS
 var mainVideoPage = document.getElementById("mainVideoPage");
 var closeBtn = document.getElementById("closeBtn")
 var button = document.getElementById("button");
 
+// SliderSec JS
 var slider = document.querySelector("#slider");
 var slideImgs = document.querySelectorAll("#slider #sliderImgs img");
-// var activeSlideImg = document.querySelector(".active");
 var circle = document.querySelectorAll("#circles .circle");
 var whiteCircle = document.querySelector("#circles .whiteCircle");
 var arrows = document.querySelectorAll("#slider .arrows");
 var next = document.querySelector("#slider .next");
 var prev = document.querySelector("#slider .prev");
+
+// Foods Sec
+var cols = document.querySelectorAll("#BreakfastSec .rows .cols");
+
 
 mainVideoPage.style.height = body.scrollHeight + "px";
 
@@ -84,4 +90,20 @@ prev.addEventListener("click", function () {
         slideImgs[slideImgs.length - 1].classList.add("active");
     }
 
+});
+
+cols.forEach(function(col){
+    col.onmouseover = function(){
+        col.style.transform = "scale(1.05)";
+        col.style.transition = "0.5s";
+        col.style.boxShadow = "#a4a4a480 5px 10px 5px";
+    };
+});
+
+cols.forEach(function(col){
+    col.onmouseleave = function(){
+        col.style.transform = null;
+        col.style.transition = null;
+        col.style.boxShadow = null;
+    };
 });
